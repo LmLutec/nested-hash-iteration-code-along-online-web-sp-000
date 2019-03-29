@@ -17,7 +17,8 @@ require 'pry'
 def remove_strawberry(contacts)
     contacts.each do |person , data|
       if person == "Freddy Mercury" 
-          :favorite_ice_cream_flavors.shift
+          :favorite_ice_cream_flavors = favorite_ice_cream_flavors
+          favorite_ice_cream_flavors.shift 
         
       end 
     end 
